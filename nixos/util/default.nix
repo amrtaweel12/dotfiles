@@ -1,13 +1,10 @@
-{ nixpkgs, nur, home-manager, other, ... }:
+{ nixpkgs, home-manager, ... }:
 with builtins;
 {
 	mkUser = user@{
 		username,
 		fullName,
 		email,
-		editor,
-		terminal,
-		theme,
 		system,
 		shell,
 		...
@@ -40,29 +37,17 @@ with builtins;
 		};
 	};
 
-	# NIC: Network Interface Card
-	# nics: List of host NIC names.
 	mkHost = host@{
 		hostName,
 		system,
 		users,
-		nics,
 		timezone,
-		latitude,
-		longitude,
 		...
 	}:
 	nixpkgs.lib.nixosSystem {
 		inherit system;
 		modules = [
 			{ _module.args = { inherit host; }; }
-			{
-				nixpkgs.overlays = [
-					nur.overlay
-					other.za-zombie.overlays.${system}.default
-					other.nix-vscode-marketplace.overlays.${system}.default
-				];
-			}
 			../host/common
 			../host/${hostName}
 			home-manager.nixosModules.home-manager

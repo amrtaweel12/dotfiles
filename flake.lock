@@ -1,35 +1,5 @@
 {
   "nodes": {
-    "flake-utils": {
-      "locked": {
-        "lastModified": 1659877975,
-        "narHash": "sha256-zllb8aq3YO3h8B/U0/J1WBgAL8EX5yWf5pMj3G0NAmc=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "c0e246b9b83f637f4681389ecabcb2681b4f3af0",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "type": "github"
-      }
-    },
-    "flake-utils_2": {
-      "locked": {
-        "lastModified": 1659877975,
-        "narHash": "sha256-zllb8aq3YO3h8B/U0/J1WBgAL8EX5yWf5pMj3G0NAmc=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "c0e246b9b83f637f4681389ecabcb2681b4f3af0",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "type": "github"
-      }
-    },
     "home-manager": {
       "inputs": {
         "nixpkgs": "nixpkgs",
@@ -46,26 +16,6 @@
       "original": {
         "owner": "nix-community",
         "repo": "home-manager",
-        "type": "github"
-      }
-    },
-    "nix-vscode-marketplace": {
-      "inputs": {
-        "flake-utils": "flake-utils",
-        "nixpkgs": "nixpkgs_2"
-      },
-      "locked": {
-        "lastModified": 1661420134,
-        "narHash": "sha256-Fp5k+vMlCNZPZXOuFf87E0M8R4u5C55rsnyXqDp3MfQ=",
-        "owner": "AmeerTaweel",
-        "repo": "nix-vscode-marketplace",
-        "rev": "5c4cf63d03bed1aabc2364342a0caf639a575057",
-        "type": "github"
-      },
-      "original": {
-        "owner": "AmeerTaweel",
-        "ref": "feat-auto-generate",
-        "repo": "nix-vscode-marketplace",
         "type": "github"
       }
     },
@@ -87,22 +37,6 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1660464579,
-        "narHash": "sha256-kzA9rwh0wS6CwUnFHAQ7dhJCowMPfRbvixVeOKnUmjo=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "b02538b16f6c5e1dbfce1033b27946e25c019b3b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "nixpkgs-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs_3": {
-      "locked": {
         "lastModified": 1663146586,
         "narHash": "sha256-VCGdyEc5TF0uq+gdU+jesjZcNxptomDunvGtElmAD9I=",
         "owner": "NixOS",
@@ -117,44 +51,10 @@
         "type": "github"
       }
     },
-    "nixpkgs_4": {
-      "locked": {
-        "lastModified": 1660464579,
-        "narHash": "sha256-kzA9rwh0wS6CwUnFHAQ7dhJCowMPfRbvixVeOKnUmjo=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "b02538b16f6c5e1dbfce1033b27946e25c019b3b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "nixpkgs-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nur": {
-      "locked": {
-        "lastModified": 1663179980,
-        "narHash": "sha256-7r4F2KcKUXD1HRiWJ9Tr0IQJzX18LNX4CjYW3Ade4fI=",
-        "owner": "nix-community",
-        "repo": "NUR",
-        "rev": "49bfb1045b6b7dd5c31ee3bc5db616307c3840f1",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-community",
-        "repo": "NUR",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
-        "nix-vscode-marketplace": "nix-vscode-marketplace",
-        "nixpkgs": "nixpkgs_3",
-        "nur": "nur",
-        "za-zombie": "za-zombie"
+        "nixpkgs": "nixpkgs_2"
       }
     },
     "utils": {
@@ -169,25 +69,6 @@
       "original": {
         "owner": "numtide",
         "repo": "flake-utils",
-        "type": "github"
-      }
-    },
-    "za-zombie": {
-      "inputs": {
-        "flake-utils": "flake-utils_2",
-        "nixpkgs": "nixpkgs_4"
-      },
-      "locked": {
-        "lastModified": 1660989931,
-        "narHash": "sha256-rY4ySdXmvbNNizut8ESwRdgxTAGqVITE9g1RB9r1c2M=",
-        "owner": "AmeerTaweel",
-        "repo": "za-zombie",
-        "rev": "3e118f66f5e8a66036055a0c76e8d81dd6e25154",
-        "type": "github"
-      },
-      "original": {
-        "owner": "AmeerTaweel",
-        "repo": "za-zombie",
         "type": "github"
       }
     }
